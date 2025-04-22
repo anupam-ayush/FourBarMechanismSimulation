@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html, body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f2f4f8;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .container {
+        background: white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        max-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 50px;
+        color: #222;
+    }
+
+    .calculator-panel {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        gap: 20px;
+        flex-grow: 1;
+    }
+
+    .input-area {
+        flex: 0 0 auto;
+        max-width: 300px;
+        overflow-y: auto;
+        padding-right: 10px;
+    }
+
+    .velocity-display {
+        flex: 0 0 auto;
+        max-width: 300px;
+        overflow-y: auto;
+        background-color: #f0f8ff;
+        border: 1px solid #e0e0e0;
+        padding: 15px;
+        border-radius: 10px;
+        font-size: 15px;
+        height: fit-content;
+    }
+
+    .input-controls {
+        background-color: #f9fafb;
+        border: 1px solid #e0e0e0;
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .input-controls label {
+        font-weight: 600;
+        font-size: 15px;
+        color: #444;
+    }
+
+    .input-controls input,
+    .input-controls select {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 13px;
+        width: 100%;
+    }
+
+
+    .input-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .input-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .control-panel {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .control-panel button {
+        padding: 10px;
+        border: none;
+        background-color: #4f46e5;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.2s;
+        font-weight: 600;
+    }
+
+    #toggleSimulation {
+        background-color: #007bff;
+    }
+
+    .control-panel button:hover {
+        background-color: #4338ca;
+    }
+
+    .speed-control {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .speed-control label {
+        font-weight: 500;
+        font-size: 12px;
+        color: #333;
+    }
+
+    canvas {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background: #fff;
+        width: 100%;
+        height: auto;
+        max-width: 700px;
+        aspect-ratio: 8 / 7;
+    }
+
+    .simulation-container {
+        flex-grow: 2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        min-width: 0;
+    }
+
+    #statusMessage {
+        font-size: 15px;
+        font-weight: 600;
+        color: #d32f2f;
+        margin-bottom: 10px;
+        min-height: 1.2em;
+    }
