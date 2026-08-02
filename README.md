@@ -41,7 +41,7 @@ $$k_1 = \frac{l_1}{l_2}, \quad k_2 = \frac{l_1}{l_4}, \quad k_3 = \frac{l_1^2 + 
 
 Once $\theta_4$ is obtained, coupler angle $\theta_3$ is determined via:
 
-$$\theta_3 = \operatorname{atan2}\left(l_4 \sin\theta_4 - l_2 \sin\theta_2, \; l_1 + l_4 \cos\theta_4 - l_2 \cos\theta_2\right)$$
+$$\theta_3 = \text{atan2}\left(l_4 \sin\theta_4 - l_2 \sin\theta_2, \; l_1 + l_4 \cos\theta_4 - l_2 \cos\theta_2\right)$$
 
 ### 2. Velocity & Acceleration Matrix System
 Differentiating loop closure equations yields the velocity matrix system:
